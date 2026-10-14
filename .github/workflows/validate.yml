@@ -1,0 +1,32 @@
+name: Validate Skill Catalog
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest and workflows
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('.')
+          skills=json.loads((root/'skills-manifest.json').read_text())['skills']
+          names={x['id'] for x in skills}
+          assert len(skills)>=24 and len(names)==len(skills)
+          for s in skills:
+            p=root/s['path']
+            assert p.is_file(),p
+            txt=p.read_text()
+            assert txt.startswith('---\\nname: '+s['id']),p
+            assert '## 输入' in txt and '## 输出' in txt,p
+          files=list((root/'workflows').glob('*.json'))
+          assert len(files)>=10
+          for p in files:
+            w=json.loads(p.read_text())
+            for step in w['steps']:
+              assert step['skill'] in names,(p,step)
+          print('PASS',len(skills),'skills;',len(files),'workflows')
+          PY
