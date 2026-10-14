@@ -1,0 +1,36 @@
+{
+  "id": "rebuttal",
+  "version": "1.0",
+  "steps": [
+    {
+      "index": 1,
+      "skill": "research-intake",
+      "requires_approval": false
+    },
+    {
+      "index": 2,
+      "skill": "paper-review",
+      "requires_approval": false
+    },
+    {
+      "index": 3,
+      "skill": "rebuttal",
+      "requires_approval": false
+    },
+    {
+      "index": 4,
+      "skill": "citation-verification",
+      "requires_approval": false
+    },
+    {
+      "index": 5,
+      "skill": "claim-audit",
+      "requires_approval": false
+    },
+    {
+      "index": 6,
+      "skill": "academic-humanizer",
+      "requires_approval": false
+    }
+  ]
+}

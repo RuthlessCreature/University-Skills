@@ -1,0 +1,36 @@
+{
+  "id": "patent-disclosure",
+  "version": "1.0",
+  "steps": [
+    {
+      "index": 1,
+      "skill": "research-intake",
+      "requires_approval": false
+    },
+    {
+      "index": 2,
+      "skill": "document-parsing",
+      "requires_approval": false
+    },
+    {
+      "index": 3,
+      "skill": "patent-disclosure",
+      "requires_approval": true
+    },
+    {
+      "index": 4,
+      "skill": "patent-search",
+      "requires_approval": false
+    },
+    {
+      "index": 5,
+      "skill": "diagram",
+      "requires_approval": false
+    },
+    {
+      "index": 6,
+      "skill": "claim-audit",
+      "requires_approval": false
+    }
+  ]
+}

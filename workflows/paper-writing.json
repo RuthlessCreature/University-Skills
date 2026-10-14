@@ -1,0 +1,46 @@
+{
+  "id": "paper-writing",
+  "version": "1.0",
+  "steps": [
+    {
+      "index": 1,
+      "skill": "research-intake",
+      "requires_approval": false
+    },
+    {
+      "index": 2,
+      "skill": "document-parsing",
+      "requires_approval": false
+    },
+    {
+      "index": 3,
+      "skill": "literature-synthesis",
+      "requires_approval": false
+    },
+    {
+      "index": 4,
+      "skill": "paper-drafting",
+      "requires_approval": false
+    },
+    {
+      "index": 5,
+      "skill": "citation-verification",
+      "requires_approval": false
+    },
+    {
+      "index": 6,
+      "skill": "claim-audit",
+      "requires_approval": false
+    },
+    {
+      "index": 7,
+      "skill": "academic-humanizer",
+      "requires_approval": false
+    },
+    {
+      "index": 8,
+      "skill": "paper-review",
+      "requires_approval": false
+    }
+  ]
+}

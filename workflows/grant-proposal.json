@@ -1,0 +1,61 @@
+{
+  "id": "grant-proposal",
+  "version": "1.0",
+  "steps": [
+    {
+      "index": 1,
+      "skill": "research-intake",
+      "requires_approval": false
+    },
+    {
+      "index": 2,
+      "skill": "document-parsing",
+      "requires_approval": false
+    },
+    {
+      "index": 3,
+      "skill": "grant-template",
+      "requires_approval": false
+    },
+    {
+      "index": 4,
+      "skill": "grant-research-content",
+      "requires_approval": true
+    },
+    {
+      "index": 5,
+      "skill": "grant-technical-route",
+      "requires_approval": false
+    },
+    {
+      "index": 6,
+      "skill": "grant-background",
+      "requires_approval": false
+    },
+    {
+      "index": 7,
+      "skill": "literature-synthesis",
+      "requires_approval": false
+    },
+    {
+      "index": 8,
+      "skill": "citation-verification",
+      "requires_approval": false
+    },
+    {
+      "index": 9,
+      "skill": "claim-audit",
+      "requires_approval": false
+    },
+    {
+      "index": 10,
+      "skill": "academic-humanizer",
+      "requires_approval": false
+    },
+    {
+      "index": 11,
+      "skill": "grant-review",
+      "requires_approval": true
+    }
+  ]
+}
