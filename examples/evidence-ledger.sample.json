@@ -1,0 +1,12 @@
+{
+  "project": "教学模拟案例",
+  "claims": [
+    {
+      "id": "C001",
+      "statement": "某监测方法的效果优于其他方法",
+      "status": "PENDING",
+      "source": {}
+    }
+  ],
+  "references": []
+}
