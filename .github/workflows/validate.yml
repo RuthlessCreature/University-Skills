@@ -20,7 +20,7 @@ jobs:
             p=root/s['path']
             assert p.is_file(),p
             txt=p.read_text()
-            assert txt.startswith('---\\nname: '+s['id']),p
+            assert txt.splitlines()[0]=='---' and txt.splitlines()[1]=='name: '+s['id'],p
             assert '## 输入' in txt and '## 输出' in txt,p
           files=list((root/'workflows').glob('*.json'))
           assert len(files)>=10
