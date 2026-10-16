@@ -1,0 +1,20 @@
+test_complete_verified (test_evidence_gate.TestEvidenceGate.test_complete_verified) ... ok
+test_duplicate (test_evidence_gate.TestEvidenceGate.test_duplicate) ... ok
+test_missing_locator (test_evidence_gate.TestEvidenceGate.test_missing_locator) ... ok
+test_pending (test_evidence_gate.TestEvidenceGate.test_pending) ... ok
+test_unsupported (test_evidence_gate.TestEvidenceGate.test_unsupported) ... ok
+test_actual_docx_and_no_invented_results (test_local_workflow.LocalWorkflowTests.test_actual_docx_and_no_invented_results) ... ok
+test_changed_guide (test_local_workflow.LocalWorkflowTests.test_changed_guide) ... ok
+test_final_export_requires_human (test_local_workflow.LocalWorkflowTests.test_final_export_requires_human) ... ok
+test_missing_guide (test_local_workflow.LocalWorkflowTests.test_missing_guide) ... ok
+test_missing_template_section (test_local_workflow.LocalWorkflowTests.test_missing_template_section) ... ok
+test_overlength (test_local_workflow.LocalWorkflowTests.test_overlength) ... ok
+test_source_missing_keeps_blocking_issue (test_local_workflow.LocalWorkflowTests.test_source_missing_keeps_blocking_issue) ... ok
+test_stale_approval (test_local_workflow.LocalWorkflowTests.test_stale_approval) ... ok
+test_unknown_source (test_local_workflow.LocalWorkflowTests.test_unknown_source) ... ok
+test_unmapped_goal (test_local_workflow.LocalWorkflowTests.test_unmapped_goal) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.027s
+
+OK

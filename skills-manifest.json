@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "date": "2026-10-14",
+  "version": "1.1",
+  "date": "2026-10-16",
   "skills": [
     {
       "id": "research-intake",
@@ -8,7 +8,11 @@
       "title": "资料准入与来源登记",
       "source": "自建",
       "path": "skills/core/research-intake/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Structured JSON classification and source locator checks, no permission inference",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "document-parsing",
@@ -16,7 +20,11 @@
       "title": "科研文件结构化解析",
       "source": "opendatalab/MinerU;docling-project/docling",
       "path": "skills/core/document-parsing/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "JSON + DOCX template only; PDF/OCR not supported",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "literature-discovery",
@@ -24,7 +32,8 @@
       "title": "学术文献发现",
       "source": "ShaishavMaisuria/research-paper-lifecycle-skills:find-papers",
       "path": "skills/core/literature-discovery/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "literature-synthesis",
@@ -32,7 +41,8 @@
       "title": "文献研究矩阵与空白识别",
       "source": "ShaishavMaisuria/research-paper-lifecycle-skills:literature-review",
       "path": "skills/core/literature-synthesis/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "citation-verification",
@@ -40,7 +50,8 @@
       "title": "参考文献核验",
       "source": "KalarisLabs/research-agent-skills:citation-verification",
       "path": "skills/core/citation-verification/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "claim-audit",
@@ -48,7 +59,9 @@
       "title": "科研主张证据审查",
       "source": "ShaishavMaisuria/research-paper-lifecycle-skills:verify-claims",
       "path": "skills/core/claim-audit/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "smoke-tested",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Structural evidence gate only; does not establish scientific truth"
     },
     {
       "id": "topic-evaluation",
@@ -56,7 +69,8 @@
       "title": "科研选题与假说",
       "source": "自建",
       "path": "skills/research/topic-evaluation/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "experiment-design",
@@ -64,7 +78,8 @@
       "title": "研究与实验方案",
       "source": "自建",
       "path": "skills/research/experiment-design/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "data-analysis",
@@ -72,7 +87,11 @@
       "title": "数据清洗与统计",
       "source": "自建",
       "path": "skills/research/data-analysis/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Real palmerpenguins descriptive n/mean/sample SD",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "grant-template",
@@ -80,7 +99,11 @@
       "title": "申报指南解析",
       "source": "参考 sh2001sh/write-grant-proposal（仅参考，不复制许可不明内容）",
       "path": "skills/grant/grant-template/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Separate JSON teaching guide and DOCX template constraints",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "grant-research-content",
@@ -88,7 +111,8 @@
       "title": "研究目标与关键科学问题",
       "source": "HuiyuLi-2000/Chinese-Grant-Writer-Skills:fund-research-content-writer",
       "path": "skills/grant/grant-research-content/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "grant-technical-route",
@@ -96,7 +120,11 @@
       "title": "技术路线与创新点",
       "source": "HuiyuLi-2000/Chinese-Grant-Writer-Skills:fund-technical-route-writer",
       "path": "skills/grant/grant-technical-route/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Supplied stage sequence to editable Mermaid; no autonomous method design",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "grant-background",
@@ -104,7 +132,8 @@
       "title": "立项依据与研究意义",
       "source": "HuiyuLi-2000/Chinese-Grant-Writer-Skills:fund-background-writer",
       "path": "skills/grant/grant-background/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "grant-review",
@@ -112,7 +141,11 @@
       "title": "申报材料结构预审",
       "source": "自建",
       "path": "skills/grant/grant-review/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Guide/sections/mapping/source/approval checks, no scientific quality rating",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "paper-drafting",
@@ -120,7 +153,11 @@
       "title": "论文分段协作",
       "source": "KalarisLabs/research-agent-skills:scientific-writing",
       "path": "skills/paper/paper-drafting/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Supplied IMRAD text to editable DOCX; no literature search",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "paper-review",
@@ -128,7 +165,8 @@
       "title": "同行评审模拟",
       "source": "ShaishavMaisuria/research-paper-lifecycle-skills:simulate-reviewers",
       "path": "skills/paper/paper-review/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "rebuttal",
@@ -136,7 +174,8 @@
       "title": "审稿意见归类与回应",
       "source": "ShaishavMaisuria/research-paper-lifecycle-skills:triage-reviews;write-rebuttal",
       "path": "skills/paper/rebuttal/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "patent-disclosure",
@@ -144,7 +183,11 @@
       "title": "专利技术交底书",
       "source": "handsomestWei/patent-disclosure-skill:patent-disclosure",
       "path": "skills/patent/patent-disclosure/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Supplied technical facts to DOCX and questions; no legal novelty search",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "patent-search",
@@ -152,7 +195,8 @@
       "title": "专利现有技术检索",
       "source": "handsomestWei/patent-disclosure-skill:patent-search",
       "path": "skills/patent/patent-search/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "data-figure",
@@ -160,7 +204,11 @@
       "title": "科研数据图",
       "source": "Haojae/scipilot-figure-skill",
       "path": "skills/figures/data-figure/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Native editable scatter chart with source data and embedded workbook",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "diagram",
@@ -168,7 +216,11 @@
       "title": "可编辑技术路线图",
       "source": "Agents365-ai/drawio-skill",
       "path": "skills/figures/diagram/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Editable Mermaid and PPT native relationships; no Draw.io integration",
+      "implementation": "tools/local_workflow.py or ../University-Agent/training/deck-zh/src/",
+      "demo_evidence": "../University-Agent/training/demos/ and training/deck-zh/"
     },
     {
       "id": "nano-banana-figure",
@@ -176,7 +228,8 @@
       "title": "科研机制示意草案",
       "source": "自建；Google Gemini图像接口",
       "path": "skills/figures/nano-banana-figure/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "academic-humanizer",
@@ -184,7 +237,8 @@
       "title": "专业学术表达修订",
       "source": "AIScientists-Dev/academic-humanizer",
       "path": "skills/quality/academic-humanizer/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     },
     {
       "id": "research-closeout",
@@ -192,7 +246,8 @@
       "title": "科研项目结题",
       "source": "自建",
       "path": "skills/quality/research-closeout/SKILL.md",
-      "status": "specified-not-integrated"
+      "status": "specified",
+      "upstream_scripts_integrated": false
     }
   ]
 }
