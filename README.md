@@ -9,3 +9,7 @@
 - 本仓库为教学集成项目；第三方代码保留来源及许可说明。
 
 从 `docs/SKILL-MATRIX.md` 阅读完整映射，`skills/` 获取可加载的技能。
+
+2026-10-17 新增 `tools/local_workflow.py`，支持 Grant、Paper、Patent 的受约束 JSON/DOCX 教学流程。它填充已提供的内容，检查指南、模板、来源和目标映射，输出真实 Word 草稿与未决问题。没有调用模型，也不自动完成查新或科学审查。支持范围见 [本地集成说明](docs/LOCAL-INTEGRATION.md)，第三方文档的版本、许可和接入范围见 [集成台账](docs/ACADEMIC-SKILL-REGISTRY.json)。
+
+安装 `requirements-teaching.txt` 后执行 `python -m unittest discover -s tests -v`。本地实际记录为 15 项通过。运行样例和 Word 预览在配套 University-Agent 仓库的 `training/demos/`。

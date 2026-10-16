@@ -1,0 +1,78 @@
+[
+  {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "sha": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+    "paths": [
+      "LICENSE.md",
+      "skills/research-lookup/README.md",
+      "skills/research-lookup/SKILL.md",
+      "skills/research-lookup/references/api-contracts.md",
+      "skills/scientific-schematics/SKILL.md",
+      "skills/scientific-schematics/references/best_practices.md",
+      "skills/scientific-schematics/references/iterative_refinement.md",
+      "skills/scientific-slides/SKILL.md",
+      "skills/scientific-slides/assets/powerpoint_design_guide.md",
+      "skills/scientific-slides/assets/timing_guidelines.md",
+      "skills/scientific-slides/references/beamer_guide.md",
+      "skills/scientific-slides/references/common_pitfalls.md",
+      "skills/scientific-slides/references/data_visualization_slides.md",
+      "skills/scientific-slides/references/presentation_structure.md",
+      "skills/scientific-slides/references/presentation_workflow.md",
+      "skills/scientific-slides/references/prompt_writing.md",
+      "skills/scientific-slides/references/script_reference.md",
+      "skills/scientific-slides/references/slide_capabilities.md",
+      "skills/scientific-slides/references/slide_design_principles.md",
+      "skills/scientific-slides/references/talk_types_guide.md",
+      "skills/scientific-slides/references/visual_review_workflow.md",
+      "skills/scientific-visualization/SKILL.md",
+      "skills/scientific-visualization/references/color_palettes.md",
+      "skills/scientific-visualization/references/journal_requirements.md",
+      "skills/scientific-visualization/references/matplotlib_examples.md",
+      "skills/scientific-visualization/references/publication_guidelines.md",
+      "skills/scientific-visualization/references/sources.md"
+    ],
+    "state": "installed-docs; methods-applied; provider-scripts-not-integrated",
+    "automatically_discovered_in_current_session": false,
+    "local_path": "vendor/scientific-agent-skills-docs",
+    "license": "MIT",
+    "test": "Native editable diagram, real CSV statistics, cited figures and per-page PNG review; not upstream provider smoke tests"
+  },
+  {
+    "repo": "Gabberflast/academic-pptx-skill",
+    "sha": "9f2b703ffe8d1449851617665ab1ffb3516d54ac",
+    "paths": [
+      "LICENSE",
+      "SKILL.md",
+      "content_guidelines.md",
+      "slide_patterns.md"
+    ],
+    "state": "public-method-reference-only",
+    "automatically_discovered_in_current_session": false,
+    "license": "LICENSE is MIT; SKILL frontmatter says Proprietary/LICENSE.txt (not present): unresolved conflict; do not redistribute",
+    "test": "Evidence-linked outline and source positioning applied; no files copied into repositories"
+  },
+  {
+    "repo": "OpenGHz/academic-human-in-the-loop",
+    "sha": "a4094db1a2fab02428483320ceac3ac0625ce86a",
+    "paths": [
+      "LICENSE",
+      "skills/slides-polish/SKILL.md"
+    ],
+    "state": "not-invoked; native-review-alternative",
+    "automatically_discovered_in_current_session": false,
+    "license": "MIT",
+    "test": "Requires visual anchor PDF and fresh Codex MCP reviewer unavailable here; complete redesign also out of polish scope"
+  },
+  {
+    "repo": "anthropics/skills",
+    "sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "paths": [
+      "skills/pptx/LICENSE.txt",
+      "skills/pptx/SKILL.md"
+    ],
+    "state": "excluded-restrictive-license",
+    "automatically_discovered_in_current_session": false,
+    "license": "Anthropic service restrictions; inspected temporary files removed",
+    "test": "Bundled first-party presentation skill used instead"
+  }
+]

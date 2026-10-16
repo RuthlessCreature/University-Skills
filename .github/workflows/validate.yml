@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded document workflow dependency
+        run: pip install -r requirements-teaching.txt
       - name: Validate manifest and workflows
         run: |
           python - <<'PY'
