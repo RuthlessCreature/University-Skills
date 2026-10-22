@@ -248,6 +248,16 @@
       "path": "skills/quality/research-closeout/SKILL.md",
       "status": "specified",
       "upstream_scripts_integrated": false
+    },
+    {
+      "id": "yusuf",
+      "group": "orchestration",
+      "title": "Yusuf高校科研总入口",
+      "source": "自建",
+      "path": "skills/yusuf/SKILL.md",
+      "status": "integrated",
+      "upstream_scripts_integrated": false,
+      "integration_scope": "Marker-triggered Skill routing and bundled SOP/examples; execution depends on host tools, no Provider acceptance claimed"
     }
   ]
 }

@@ -1,0 +1,466 @@
+{
+  "grant": {
+    "version": "2.0-draft",
+    "route": "grant",
+    "steps": [
+      {
+        "id": "grant-1",
+        "name": "intake",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "grant-2",
+        "name": "template",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "grant-3",
+        "name": "requirements",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "grant-4",
+        "name": "content-route",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "grant-5",
+        "name": "source-audit",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "grant-6",
+        "name": "humanize-export",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      }
+    ],
+    "final_state": "DRAFT_READY",
+    "scientific_signoff": false
+  },
+  "paper": {
+    "version": "2.0-draft",
+    "route": "paper",
+    "steps": [
+      {
+        "id": "paper-1",
+        "name": "intake",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "paper-2",
+        "name": "journal-requirements",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "paper-3",
+        "name": "analysis",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "paper-4",
+        "name": "methods-results",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "paper-5",
+        "name": "discussion-audit",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "paper-6",
+        "name": "humanize-export",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      }
+    ],
+    "final_state": "DRAFT_READY",
+    "scientific_signoff": false
+  },
+  "patent": {
+    "version": "2.0-draft",
+    "route": "patent",
+    "steps": [
+      {
+        "id": "patent-1",
+        "name": "intake",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "patent-2",
+        "name": "template",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "patent-3",
+        "name": "features",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "patent-4",
+        "name": "prior-art",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "patent-5",
+        "name": "embodiment",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "patent-6",
+        "name": "humanize-export",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      }
+    ],
+    "final_state": "DRAFT_READY",
+    "scientific_signoff": false
+  },
+  "figure": {
+    "version": "2.0-draft",
+    "route": "figure",
+    "steps": [
+      {
+        "id": "figure-1",
+        "name": "intake",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "figure-2",
+        "name": "figure-spec",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "figure-3",
+        "name": "analysis-relations",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "figure-4",
+        "name": "draw",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "figure-5",
+        "name": "numeric-visual-audit",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      },
+      {
+        "id": "figure-6",
+        "name": "caption-export",
+        "input": [
+          "task.json",
+          "input hash manifest",
+          "previous checkpoint"
+        ],
+        "output": [
+          "artifact paths and hashes",
+          "claims with source locators",
+          "issues",
+          "actual tool events"
+        ],
+        "on_missing": "NEEDS_INPUT",
+        "on_tool_failure": "FAILED",
+        "auto_continue_draft": true
+      }
+    ],
+    "final_state": "DRAFT_READY",
+    "scientific_signoff": false
+  }
+}
