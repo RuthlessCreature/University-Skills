@@ -17,7 +17,7 @@ description: 用户在当前请求中写出【Yusuf】、【Yusuf，…】、【
 
 找不到仓库时，仍可按本Skill附带的[共同操作规程](references/workflow-sop.md)整理现有材料与缺口，但不能声称工具、模板或案例已经执行。安装及使用方式见[调用说明](references/usage.md)。
 
-先读共同规程，再按[任务路由](references/routes.md)只加载本次需要的Skill。相关Skill优先取项目 `.agents/skills/<id>/SKILL.md`，否则按源仓库manifest查找。分节点执行另读[文件交接与失败处理](references/node-sop.md)。需要理解正常材料与缺口处理时，按任务类型阅读[12组示例提示词](references/examples.md)，模板来源见[模板登记](references/templates.md)。
+先读共同规程，再按[任务路由](references/routes.md)只加载本次需要的Skill。已定位源仓库时，按其manifest读取当前源Skill，避免使用项目中遗留的旧安装副本；没有源仓库时才读取项目 `.agents/skills/<id>/SKILL.md`。分节点执行另读[文件交接与失败处理](references/node-sop.md)。需要理解正常材料与缺口处理时，按任务类型阅读[12组示例提示词](references/examples.md)，模板来源见[模板登记](references/templates.md)。
 
 ## 实际执行
 
